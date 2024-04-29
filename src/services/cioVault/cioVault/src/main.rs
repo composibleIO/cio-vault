@@ -19,10 +19,10 @@ pub fn write(data: String, path: String) -> bool {
 }
 
 #[marine]
-pub fn mkdir(path: String) -> bool {
+pub fn dir(path: String) -> bool {
 
     let vault = vault(&path);
-    let _ = fs::create_dir_all(&path).unwrap();
+    let _ = fs::create_dir_all(vault).unwrap();
 
     true
 }
@@ -30,7 +30,7 @@ pub fn mkdir(path: String) -> bool {
 #[marine]
 pub fn inspect(path: String) -> Vec<String> {
 
-    let vault = vault(path);
+    let vault = vault(&path);
     let mut filenames = Vec::new();
 
     // Read the directory

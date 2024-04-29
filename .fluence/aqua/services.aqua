@@ -2,4 +2,6 @@ aqua Services declares *
 
 
 service CioVault("cioVault"):
-  greeting(name: string) -> string
+  dir(path: string) -> bool
+  inspect(path: string) -> []string
+  write(data: string, path: string) -> bool

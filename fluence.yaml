@@ -26,3 +26,5 @@ compileAqua:
 services:
   cioVault:
     get: src/services/cioVault
+
+defaultSecretKeyName: joera
