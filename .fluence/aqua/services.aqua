@@ -1,0 +1,5 @@
+aqua Services declares *
+
+
+service CioVault("cioVault"):
+  greeting(name: string) -> string
